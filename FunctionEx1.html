@@ -1,0 +1,55 @@
+<html>
+  <head>
+       <title>Javascript Object Notation JSON</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+       function SayHello()
+         {
+             alert("Hello,Welcome!");
+         } 
+       SayHello(); 
+
+       function Cube( a)
+        {
+           return a*a*a;
+        }
+       var t=Cube(4);
+       alert("Cube is:"+t);
+
+       function Add(a,b)
+          {
+               alert("Addition is:"+(a+b));
+          }
+       Add(10,20);
+
+       function Max(p,q,r)
+         {
+            if(p>q)
+              {
+                 if(p>r)
+                    {
+                         return p;
+                    }
+                else
+                   {
+                         return r;
+                   }
+              }
+           else
+              {
+                   if(q>r)
+                     {
+                         return q; 
+                     }
+                   else
+                      {
+                          return r;
+                      }
+              }      
+         }
+         var t=Max(67,98,34);
+         alert("Max is:"+t); 
+    </script>
+  </body>
+</html>

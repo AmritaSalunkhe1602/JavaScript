@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>Document Object Model</title>
+ </head>
+ <body>
+    <div id="a">
+              Programming Language that supports Object Oriented Features like <u> Object ,Class ,Inheritance ,Polymorphism ,Encapsulation ,Abstraction </u> Called  Object Oriented Language.<b> C# is the Object Oriented Language.</b>
+    </div>      
+
+    <input type="text" id="b"/><br><br>
+    <input type="button" value="Read" onclick="funcRead()"/>
+    <input type="button" value="Write" onclick="funcWrite()"/>
+     <script>
+              function funcRead()
+                 {
+                      var r=document.getElementById("a");
+                      alert(r.innerText);
+                      alert(r.innerHTML);
+                     var r=document.getElementById("b");
+                     alert(r.value);
+                 }
+            function funcWrite()
+                {
+                      var r=document.getElementById("a");
+                      r.innerText="Document Object Model!";
+                     r.innerHTML="<font size='30px' color='Red'>DOM!!</font>";
+                     var r=document.getElementById("b");
+                     r.value="Ajit";
+                }
+     </script>
+</body>
+
+</html>

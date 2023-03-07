@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Document Object Model</title>
+ </head>
+ <body>
+          <label for="n1">Enter First Number:</label>
+             <input type="text" id="n1"/><br><br>
+          <label for="n2">Enter Second Number:</label>
+             <input type="text" id="n2"/><br><br>
+          <label for="res">Result:</label>
+              <input type="text" id="res"/><br><br>
+          <input type="button" id="div" value="Division" onclick="funcDiv()"/>
+          <input type="button" id="multi" value="Multiplication" onclick="funcMulti()"/>
+
+   <script>
+          function funcDiv()
+              {
+                  var a=parseInt(document.getElementById("n1").value);
+                  var b=parseInt(document.getElementById("n2").value); 
+                  document.getElementById("res").value=a/b;
+             }
+        function funcMulti()
+            {
+                var a=parseInt(document.getElementById("n1").value);
+                var b=parseInt(document.getElementById("n2").value);
+                document.getElementById("res").value=a*b;
+            }
+   </script>  
+</body>
+
+</html>

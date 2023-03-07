@@ -1,0 +1,45 @@
+<html>
+   <head>
+      <title>Document Object Model</title>
+  </head>
+  <body>
+     <label for="n1">Enter First Number:</label><input type="text" id="n1"/><br><br>
+     <label for="n2">Enter Second Number:</label><input type="text" id="n2"/><br><br>
+     <label for="operator">Select Operator:</label><select id="operator"><option>+</option>
+                                                                                                       <option>-</option>
+                                                                                                        <option>*</option>
+                                                                                                        <option>/</option>
+                                                                                       </select><br><br>
+    <label for="res">Result:</label><input type="text" id="res"/><br><br>
+    <input type="button" value="Calculate" onclick="calculate()"/>
+
+  <script>
+      function calculate()
+           {
+              var a=parseInt(document.getElementById("n1").value);
+              var b=parseInt(document.getElementById("n2").value);
+              var opt=document.getElementById("operator").value;
+              var c;
+              switch(opt)
+                   {
+                       case  '+':
+                                 c=a+b;
+                                 break;
+                       case  "-":
+                                c=a-b;
+                                break;
+                       case  '*':
+                                c=a*b;
+                                break;
+                       case  "/":
+                                c=a/b;
+                                break;
+                       default:
+                               alert("Invalid Operator!");
+                               break;
+                  }
+               document.getElementById("res").value=c;
+           }
+  </script>
+  </body>
+</html>

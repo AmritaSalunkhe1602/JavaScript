@@ -1,0 +1,25 @@
+<html>
+<head>
+<title>Javascript</title>
+<script>
+var even=0,odd=0,ecnt=0,ocnt=0,z;
+do
+{
+ z=parseInt(prompt("Enter no.:"));
+if(z%2==0)
+{
+ even=even+z;
+ ecnt++;
+}else
+{
+ odd=odd+z;
+ ocnt++;
+}
+}
+while(z%5!=0);
+alert("Even sum: "+even+" Count: "+ecnt);
+alert("Odd sum: "+odd+" Count: "+ocnt);
+</script>
+</head>
+
+</html>

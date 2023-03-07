@@ -1,0 +1,42 @@
+<html>
+   <head>
+     <title>Prime Numbers</title>
+  </head>
+  <body> 
+      Enter Start Number:<input type="text" id="n1"/><br><br>
+      Enter End Number:<input type="text" id="n2"/><br><br>
+      Result:<input type="text" id="res" /><br><br>
+      <input type="button" value="OK" onclick="find()"/>
+  <script>
+      function find()
+          {
+               var a=document.getElementById("n1").value;
+               var b=document.getElementById("n2").value;
+               if(a>b)
+                 {
+                    alert("Start number should be greater than end number!");
+                }
+                else
+                    {     var prime;
+                          for(var i=a;i<=b;i++)
+                            {       
+                                    prime=0;
+                                for(var j=1;j<=i;j++)
+                                    {                                          
+                                       if(i%j==0)
+                                          {
+                                              prime++;
+                                          }
+                                   }
+                               if(prime==2)
+                                    {
+                                       console.log(i);
+                                       
+                                       document.getElementById("res").innerText=i+" ";
+                                    }
+                            }
+                    }
+          }
+  </script>
+  </body>
+</html>

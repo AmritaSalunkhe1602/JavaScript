@@ -1,0 +1,24 @@
+<html>
+   <head>
+        <title>Date Time Functions</title
+   </head>
+   <body>
+       <script>
+             var d=new Date();
+             document.write("Current Date Time:"+d+"<br>");
+             d=new Date(2023,01,16,10,15,57);
+             document.write("Given Date Time:"+d+"<br>");
+             document.write("Day Of Week:"+d.getDay()+"<br>");
+             document.write("Month of Year:"+d.getMonth()+"<br>");
+             document.write("Year:"+d.getYear()+"<br>");
+             document.write("Hours:"+d.getHours()+"<br>");
+             document.write("Minutes:"+d.getMinutes()+"<br>");
+             document.write("Seconds:"+d.getSeconds()+"<br>");
+             document.write("Time:"+d.getTime()+"<br>");
+             d.setDate(27);
+             d.setMonth(00);
+             d.setYear(2023);
+             document.write("SetDateTime:"+d+"<br>");
+       </script>
+   </body>
+</html>

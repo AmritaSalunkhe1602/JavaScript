@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Javascript</title>
+<script>
+var d,sum,n;
+for(var i=10;i<=500;i++)
+{sum=0;
+n=i;
+while(n!=0)
+{
+d=n%10;
+sum=sum+d*d*d;
+n=parseInt(n/10);
+}
+if(sum==i)
+alert(i);
+}
+</script>
+</head>
+
+</html>

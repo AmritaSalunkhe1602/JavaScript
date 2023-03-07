@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Document Object Model</title>
+ </head>
+ <body>
+    <input type="text" id="z"/>
+    <div id="dv">Result</div>
+   <input type="button"  value="Ok" onclick="funcRes()"/>
+
+   <script>
+        function funcRes()
+             {
+                    var t=document.getElementById("dv");
+                    var r=parseInt(document .getElementById("z").value);
+                    if(r%2==0)
+                           {
+                                t.innerText="Even Number!";
+                           }
+                    else
+                          {
+                               t.innerText="Odd Number!";
+                         }
+             }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+  <head>
+       <title>Javascript Object Notation JSON</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+        var x=[{}];
+         for(var i=0;i<5;i++)
+            {
+               var id=parseInt(prompt("Enter Emp Id:"));
+               var en=prompt("Enter Emp Name:");
+               var dn=prompt("Enter Dept Name:");
+               var s=parseFloat(prompt("Enter Salary:"));
+               x[i]={"EmpId":id,"EmpName":en,"DeptName":dn,"Salary":s};
+            }
+       
+        for(var i=0;i<x.length;i++)
+           {
+              if(x[i].DeptName=="Computer")
+                   {
+                       alert("Emp Id:"+x[i].EmpId);
+                       alert("Emp Name:"+x[i].EmpName);
+                       alert("Dept Name:"+x[i].DeptName);
+                       alert("Salary:"+x[i].Salary);
+                   }
+          }
+    </script>
+  </body>
+</html>

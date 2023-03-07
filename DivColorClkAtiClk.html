@@ -1,0 +1,37 @@
+<html>
+  <head>
+     <title>Div Color changes Clockwise,Anticlockwise</title>
+  </head>
+  <body>
+     <div id="a" style="height:100px;width:200px;border:1px solid;position:absolute;top:100px;left:400px;background-color:skyblue"></div>
+     <div id="b" style="height:100px;width:200px;border:1px solid;position:absolute;top:100px;left:600px;background-color:pink"></div>
+     <div id="c" style="height:100px;width:200px;border:1px solid;position:absolute;top:200px;left:400px;background-color:violet"></div>
+     <div id="d" style="height:100px;width:200px;border:1px solid;position:absolute;top:200px;left:600px;background-color:aqua"></div>
+     <input type="radio" name="clk" id="r1"/>Clockwise
+     <input type="radio" name="clk" id="r2"/>Anticlockwise<br>
+     <input type="button" value="Apply" onclick="func()"/>
+  <script>
+       function func()
+           {
+               var p=document.getElementById("a");
+               var q=document.getElementById("b");
+                var r=document.getElementById("c");
+               var s=document.getElementById("d");
+               if(document.getElementById("r1").checked)
+                 {
+                     p.style.backgroundColor="violet";
+                     q.style.backgroundColor="skyblue";
+                     r.style.backgroundColor="aqua";
+                     s.style.backgroundColor="pink";
+                 }
+              if(document.getElementById("r2").checked)
+                {
+                      p.style.backgroundColor="pink";
+                     q.style.backgroundColor="aqua";
+                     r.style.backgroundColor="skyblue";
+                     s.style.backgroundColor="violet";
+                }
+           }
+  </script>
+  </body>
+</html>

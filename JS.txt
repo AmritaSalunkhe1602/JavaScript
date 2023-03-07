@@ -1,0 +1,152 @@
+HTML- static 
+format/describe/present/arrange  - data
+if you want to add some logic/intractivity/processing to html  -
+  > client scriptiong/client side programing.
+What is javascript?
+e.g. write a program in JavaScript to input three integer numbers from the user and display greater number from it.
+<script type="text/javascript">
+ var n=parseInt(prompt("Enter No:"));
+ if(n%2==0)
+{
+   alert("Even No!");
+ }
+else
+{
+  alert("Odd Number!");
+ }
+</script>
+e.g. input 10 integer numbers from the user and display addition of only even numbers.
+<script type="text/javascript">
+  var n,ecnt=0,ocnt=0;
+  for(var i=0;i<10;i++)
+  {
+      n=parseInt(prompt("Enter No:"));
+      if(n%2==0)
+          ecnt++;
+      else
+          ocnt++; 
+  }
+alert("Even Count:"+ ecnt);
+alert("Odd Count:"+ ocnt);
+</script>
+
+javascript / operator does floating division (thus convert to parseInt)  10/3 =division- 3.333333 rem- 0
+C# / operator does integer division 10/3= div- 3 rem- 1
+
+10/3=3      1
+10/3=3 0
+
+<script type="text/javascript">
+  var n,dig,sum=0;
+  n=parseInt(prompt("Enter No:"));
+  while(n!=0)
+  {
+     dig=n%10;
+     sum=sum+dig;
+     n=parseInt(n/10); 
+  }
+ alert("Sum is:"+ sum);
+</script>
+e.g. write a program in javascript to display count of even and odd digits. 
+<script type="text/javascript">
+  var n,dig,ecnt=0,ocnt=0;
+  n=parseInt(prompt("Enter No:"));
+  while(n!=0)
+  {
+     dig=n%10;
+     if(dig%2==0)
+        ecnt++;
+     else
+        ocnt++;
+     n=parseInt(n/10); 
+  }
+ alert("Even Count:"+ ecnt);
+ alert("Odd Count:"+ ocnt);
+</script>
+e.g. input number from the user and display it's reverseno
+12345   54321
+
+  <script type="text/javascript">
+           var prod = {"ProductID":1,"ProductName":"Mouse","MfgName":"Intex","Price":450 };
+           alert("Product ID:"+ prod.ProductID);
+           alert("Product Name:"+ prod.ProductName);
+           alert("Mfg Name:"+ prod.MfgName);
+           alert("Price:"+ prod.Price);
+  </script>
+
+e.g. input empid, empname,deptname, salary from the user in object/store it in object and display it(alert it)
+<script type="text/javascript">
+    var prod=[
+           {"ProductID":1,"ProductName":"Mouse","MfgName":"Intex","Price":450},
+           {"ProductID":2,"ProductName":"Keyboard","MfgName":"Logitech","Price":550},
+           {"ProductID":3,"ProductName":"Monitor","MfgName":"LG","Price":750},
+           {"ProductID":4,"ProductName":"Laptop","MfgName":"Intex","Price":950}
+          ];
+     for(var i=0;i<prod.length;i++)
+     {
+             alert("Product ID:"+ prod[i].ProductID);
+             alert("ProductName:"+ prod[i].ProductName); 
+             alert("Mfg Name:"+ prod[i].MfgName);
+             alert("Price:"+ prod[i].Price);
+     } 
+  </script>
+e.g. input empid,empname,deptname, salary for 5 employees store it in object array and display only employees from computer department
+  function SayHello()
+   {
+        alert("Say Hello Function Called!");
+   }
+   SayHello();
+   SayHello();
+
+  function addnum(a,b)
+  {
+        alert("Addition is:" +(a+b));
+  }
+  addnum(200,200);
+
+  function cube(a)
+  {
+         return a*a*a;
+  }
+ var r=cube(10);
+ alert("result is:"+ r);
+
+e.g. write a function which will accept three numbers as parameter and returns you greater number from it. 
+ <script type="text/javascript">
+  var f=function(a)
+   {
+          return a*a*a;
+   };
+  var r =f(10);
+  alert("Result is:"+ r);
+  </script>
+
+DOM
+Document Object Model
+  HTML DOM
+  XML DOM
+
+BOM
+Browser Object Model
+ 
+
+Java Script/Client Side used to add/logic/process to html document. 
+
+Object Based=>DOM=>   HTML Tag/Markup Based
+
+b=a
+innerText
+innerHTML
+value
+style:- read/write css attributes in  html tag using client script. 
+
+
+ css property                         javascript  property
+      color                                     color
+       width                                   width
+      height                                   height
+      background-color                   backgroundColor
+     border-style                           borderStyle
+    font-size                                  fontSize
+     padding                                   padding
+     padding-left                            paddingLeft

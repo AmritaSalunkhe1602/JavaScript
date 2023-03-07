@@ -1,0 +1,59 @@
+<html>
+  <head>
+      <title>Document Object Model!</title>
+  </head>
+  <body>
+       <label for="n">Enter Number:</label> <input type="text" id="n"/><br><br>
+       <input type="radio" id="ad" name="Digits"/> All Digits 
+       <input type="radio" id="ed" name="Digits"/>Even Digits
+       <input type="radio" id="od" name="Digits"/>Odd Digits<br><br>  
+        <label for="res">Result:</label><input type="text" id="res"/><br><br>
+       <input type="button" value="Ok" onclick="cal()"/>   
+
+      <script>
+            function cal()
+                  {
+                        var a=parseInt(document.getElementById("n").value);
+                        if(document.getElementById("ad").checked)
+                           {
+                                    var d,sum=0;
+                                    while(a!=0)
+                                          {
+                                                  d=a%10;
+                                                  sum=sum+d;
+                                                  a=parseInt(a/10);
+                                          }
+                                    document.getElementById("res").value=sum;
+                           }
+                      if(document.getElementById("ed").checked)
+                            {
+                                  var d,even=0;
+                                  while(a!=0)
+                                       {
+                                            d=a%10;
+                                                if(d%2==0)
+                                                      {
+                                                             even+=d;
+                                                      }
+                                            a=parseInt(a/10);
+                                       }
+                                  document.getElementById("res").value=even;
+                            }
+                    if(document.getElementById("od").checked)
+                        {
+                              var d,odd=0;
+                                while(a!=0)
+                                    {
+                                         d=a%10;
+                                           if(d%2!=0)
+                                                {
+                                                      odd+=d;
+                                                }
+                                           a=parseInt(a/10);
+                                    }
+                                document.getElementById("res").value=odd;
+                        }
+                  }
+      </script>
+  <body>
+</html>

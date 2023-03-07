@@ -1,0 +1,30 @@
+<html>
+  <head>
+      <title>Document Object Model!</title>
+  </head>
+  <body>
+     <div id="x">Hello</div><br>
+    <select id="color"><option>Red</option>
+                                     <option>Green</option>
+                                     <option>Blue</option>
+                                     <option>Orange</option>
+   </select><br><br>
+     <input type="radio" name="color" id="f" onfocus="fore()"/>ForeGround 
+      <input type="radio" name="color" id="b" onfocus="back()"/>BackGround
+ 
+ <script>
+  function fore()
+     {
+          var a=document.getElementById("x");
+          if(document.getElementById("f").checked)
+             a.style.color=document.getElementById("color").value;       
+     }
+function back()
+{
+  var b=document.getElementById("x");
+  if(document.getElementById("b").checked)
+    b.style.backgroundColor=document.getElementById("color").value;
+}
+</script>
+  </body>
+</html>

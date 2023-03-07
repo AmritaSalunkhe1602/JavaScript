@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>JavaScript</title>
+<script>
+var n,d,sum=0,even=0,odd=0,ecnt=0,ocnt=0;
+n=parseInt(prompt("Enter No.:"));
+while(n!=0)
+{
+d=n%10;
+sum+=d;
+if(d%2==0)
+{
+even+=d;
+ecnt++;
+}else
+{
+odd+=d;
+ocnt++;
+}
+n=parseInt(n/10);
+}
+alert("sum of digits:"+sum);
+alert("Sum of Even Digits: "+even+" count: "+ecnt);
+alert("Sum of Odd Digits: "+odd+" count: "+ocnt);
+</script>
+</head>
+<body>
+
+</body>
+</html>

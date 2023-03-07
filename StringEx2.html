@@ -1,0 +1,21 @@
+<html>
+   <head>
+        <title>Document Object Model</title>
+   </head>
+   <body>
+         <script type="text/javascript">
+             var a=prompt("Enter Name:");
+             for(var i=a.length;i>=1;i++)
+                  {                         
+                         for(var j=1;j<i;j++)
+                              {
+                                     document.write(" ");
+                              }
+                      for(var k=a.length;k>=i;k--)
+                             {
+                                    document.write(a.substring(k,k));
+                             }
+                             document.write("<br>");
+                  }
+         </script>
+</html>

@@ -1,0 +1,46 @@
+<html>
+    <head>
+      <title>JavaScript Armstrong Number</title>
+   </head>
+   <body>
+       <label>Enter Start No:</label><input type="text" id="n1"/><br><br>
+      <label>Enter End No:</label><input type="text" id="n2"/><br><br>
+       <label>Result:</label><input type="text" id="res"/><br><br>
+       <input type="submit" value="OK" onclick="func()"/>
+
+   <script type="text/javascript">
+         function func()
+            {
+                  var a=parseInt(document.getElementById("n1").value);
+                  var b=parseInt(document.getElementById("n2").value);
+                  if(a>b)
+                      {
+                              alert("Start no. should be less than end no.");
+                      }
+                 else
+                      {     var n,d,sum,a;
+           var str='';             
+               for(var i=a;i<=b;i++)
+                         { 
+                               
+                                n=i;
+                                sum=0;
+                                while(n!=0)
+                                     {
+                                            d=n%10;
+                                           sum+=d*d*d;
+                                            n=parseInt(n/10);
+                                     }
+                               if(sum==i)
+                                   {
+                                    str+=i+',';
+                                  }
+                           }
+                                   var z=document.getElementById("res");
+                                          z.value=str;
+                          
+                      }
+            }
+  </script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<html>
+  <head>
+         <title>Document Object Moedl</title>
+  </head>
+  <body>
+       <div id="d">Here is a Div Tag</div>
+      <label>Color:</label><select id="fc"><option>Yellow</option>
+                                                                          <option>Green</option>
+                                                                          <option>White</option>
+                                              </select><br><br>
+     <label>Background Color:</label><select id="bg"><option>Black</option>
+                                                                                              <option>Blue></option>
+                                                                                              <option>Pink></option>
+                                                                  </select><br><br>
+    <label>Font Size:</label><select id="fs"><option>10</option>
+                                                                            <option> 20</option>
+                                                                            <option>30</option>
+                                                </select><br><br>
+
+   <input type="button" value="Apply" onclick="func()"/>
+
+  <script> 
+            function func()
+                {
+                     var a=document.getElementById("d");
+                     a.style.color=document.getElementById("fc").value;
+                     a.style.backgroundColor=document.getElementById("bg").value;
+                     a.style.fontSize=document.getElementById("fs").value;
+                }
+  </script>
+  </body>
+</html>
